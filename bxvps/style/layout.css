@@ -10,7 +10,8 @@
 }
 body{
 	font-size: 12px;
-	font-size: "Micorsoft Yahei","宋体";
+	font-size: "微软雅黑","Arial Narrow",HELVETICA;
+	color:#666;
 }
 ul{
 	list-style-type: none;
@@ -29,6 +30,9 @@ a{
 	clear:both;
 	height: 0;
 	visibility: hidden;
+}
+.hide{
+	display:none;
 }
 header{
 	width: 100%;
@@ -56,6 +60,7 @@ header ul li a{
 	color:#000;
 
 }
+
 header ul li a:hover{
 	background: #eee;
 	color: #197ab1;
@@ -116,6 +121,7 @@ header .form_btn a{
 	color: #000;
 	line-height: 26px;
 }
+
 header .form_btn a:hover{
 	color: #197ab1;
 }
@@ -233,6 +239,9 @@ nav ul li a{
 	color: #fff;
 	font-weight: bold;
 }
+nav ul li a.active{
+	background:url(../images/nav_hover.png) no-repeat;
+}
 nav ul li a:hover{
 	background:url(../images/nav_hover.png) no-repeat;
 }
@@ -349,6 +358,7 @@ p.footer_tell{
 	height: 33px;
 	line-height: 30px;
 	padding-left: 38px;
+	margin-top: 10px;
 }
 .nav_position p a{
 	color: #666;
@@ -360,14 +370,12 @@ p.footer_tell{
 article.content{
 	width: 980px;
 	margin: auto;
-
 }
 /*侧栏*/
 .sidebar{
 	width: 210px;
 	height: 1000px;
 	float: left;
-	background: lightgreen;
 }
 .sidebar h1{
 	height: 32px;
@@ -382,10 +390,372 @@ article.content{
 	width: 100px;
 	border-bottom: 2px solid #197AB1;
 }
+
+.sidebar ul.sidebar_nav li{
+	height:40px;
+	width: 210px;
+	background:#0099FF;
+	margin:5px 0px;
+}
+
+.sidebar ul li a{
+	display:block;
+	width:210px;
+	color:#fff;
+	font-size:14px;
+	line-height:40px;
+
+}
+.sidebar ul.sidebar_nav li a:hover{
+	background: #666;
+}
+.sidebar ul.sidebar_nav li a:before{
+	display:inline-block;
+	content: '';
+	width: 18px;
+	height:18px;
+	margin:0px 20px;
+	background:url(../images/icon.png) no-repeat center;
+	vertical-align: middle;
+}
+.sidebar ul.sidebar_nav a.list1:before{
+	background-position: 0px -18px;
+}
+
+.sidebar ul.sidebar_nav a.list2:before{
+	width:20px;
+	height: 19px;
+	margin-right: 14px;
+	background-position: 0px -40px;
+}
+.sidebar ul.sidebar_nav a.list3:before{
+	width:20px;
+	height:20px;
+	margin-right: 14px;
+	background-position: -80px -16px;
+}
+.sidebar ul.sidebar_nav a.list4:before{
+	width:15px;
+	height:20px;
+	background-position: -85px -40px;
+}
+.sidebar ul.sidebar_nav a.list5:before{
+	width:15px;
+	height:20px;
+	background-position: -85px -63px;
+}
+.sidebar ul.sidebar_nav a.list6:before{
+	width:20px;
+	height:20px;
+	margin-right: 14px;
+	background-position: -61px -80px;
+}
+.sidebar ul.sidebar_nav a.list7:before{
+	width:20px;
+	height:20px;
+	margin-right: 14px;
+	background-position: -38px -80px;
+}
+.sidebar ul.sidebar_nav a.list8:before{
+	width:20px;
+	height:18px;
+	margin-right: 14px;
+	background-position: 0px -60px;
+}
+.sidebar ul.ad{
+	width: 210px;
+}
+.sidebar ul.ad li{
+	width:210px;
+	height:210px;
+	margin:15px 0px;
+	background: none;
+}
+.sidebar ul li.ad img{
+	border:0;
+}
+/*右侧*/
 .content_info{
 	width:750px;
-	height: 1000px;
-	background: red;
+	height: auto;
 	float: right;
 	margin-bottom: 10px;
+}
+/*标题*/
+.content_info .right_title{
+	margin-top: 6px;
+	heigth:40px;
+	border-bottom:1px solid #ccc;
+
+}
+.content_info .right_title span{
+	display: block;
+	height:30px;
+	font-size: 20px;
+	padding-left:10px;
+	color:#0099FF;
+	border-left:4px solid #0099FF;
+	margin-bottom: 4px;
+}
+
+.content_info .e_domain{
+	width:750px;
+	height:188px;
+	background:url(../images/domain_img1.png) no-repeat right 2px;
+	border-bottom:1px solid #ccc;
+}
+.content_info  form{
+	width:460px;
+	height:126px;
+	margin-top:17px;
+	margin-left:20px;
+}
+p.edomain_text{
+	width:437px;
+	height:40px;
+	background:url(../images/domain_search.png) no-repeat left top;
+	line-height: 38px;
+}
+input.domain_text{
+	width:260px;
+	height:36px;
+	padding-left:8px;
+	margin-left:110px;
+	vertical-align:middle;
+	font-size: 20px;
+	border:none;
+}
+div.domain-fl{
+	width:435px;
+	height:50px;
+	padding:0;
+	margin:0;
+	margin-top:20px;
+}
+div.domain-fl label{
+	display:block;
+	width:87px;
+	height:25px;
+	float:left;
+}
+input[type=checkbox]{
+	margin-right:4px;
+}
+/*中文域名注册*/
+.z_domain{
+	width:750px;
+	height:188px;
+	background:url(../images/domain_img2.png) no-repeat right 2px;
+	border-bottom:1px solid #ccc;
+}
+#domain_tab{
+	height:auto;
+	border-bottom:1px solid #ccc;
+}
+#domain_tab ul{
+	width:750px;
+	height:40px;
+	border-bottom:2px solid #0099FF;
+	margin-top:10px;
+}
+#domain_tab ul li{
+	color:#0099FF;
+	font:bold 18px/38px Microsoft Yahei,sans-serif;
+	width:150px;
+	height:40px;
+	float:left;
+	text-align:center;
+	cursor:pointer;
+}
+#domain_tab ul li.active{
+	background: #0099FF;
+	color:#fff;
+}
+/*域名优势*/
+.domain_advantage{
+	height:382px;
+	background: url(../images/domain_goodness.jpg) no-repeat center 20px;
+	position:relative;
+}
+#tab_box p{
+	margin-bottom:10px;
+}
+.domain_advantage p strong{
+	color:#000;
+}
+.p1,.p2,.p3,.p4{
+	margin:20px 0px;
+	width:148px;
+	height:122px;
+
+}
+.domain_advantage .p1{
+	position:absolute;
+	left:0px;
+	top:0px;
+
+}
+.domain_advantage .p2{
+	position:absolute;
+	left:0px;
+	bottom:16px;
+}
+.domain_advantage .p3{
+	position:absolute;
+	right:0px;
+	top:0px;
+}
+.domain_advantage .p4{
+	position:absolute;
+	right:0px;
+	bottom:16px;
+}
+/*域名指南*/
+.domain_guide h1{
+	height: 40px;
+	font:bold 16px/40px Microsoft Yahei,sans-serif;
+	color:#197AB1;
+	text-indent: 30px;
+	border-bottom:1px solid #ccc;
+}
+.tab_con2_text{
+	width:723px;
+	padding-left:27px;
+}
+.tab_con2_text p{
+	margin-top: 10px;
+}
+.tab_con2_text p em{
+	font-style:normal;
+	font-weight: bold;
+	color:#FF6600;
+}
+
+
+/*域名推荐*/
+.domain_commend {
+	width: 750px;
+	height:474px;
+	background:url(../images/domain_tuijian_bg.png) no-repeat center center;
+}
+.domain_commend dl{
+	width:176px;
+	height:100px;
+	display: inline-block;
+	margin-top:48px;
+	margin-left:165px;
+	line-height: 25px;
+}
+.domain_commend dl.dl_r{
+	margin-left:193px;
+}
+.domain_commend dt{
+	color:#666;
+	font-weight:bold;
+}
+.domain_commend b{
+	font-size: 14px;
+	color:#fa8800;
+}
+/*增值服务*/
+.domain_server{
+	width:750px;
+	height:290px;
+	background:url(../images/domain_serve_bg.png) no-repeat center center;
+}
+.domain_server dl{
+	width:370px;
+	height:136px;
+	padding:30px 0 0 60px;
+	display: inline-block;
+	line-height: 20px;
+}
+.domain_server dl a{
+	display:block;
+	background:url(../images/domain-sever.png) no-repeat right;
+	width:63px;
+	height:69px;
+	text-indent:-9999px;
+	float: left;
+
+}
+.domain_server dl a.server1{
+	background-position:5px 0;
+}
+
+.domain_server dl a.server2{
+	width:69px;
+	height:50px;
+	background-position:-66px 0;
+}
+
+.domain_server dl.dl_server3 a.server3{
+	width:63px;
+	height:66px;
+	background-position:-152px 0px;
+}
+.domain_server dl a.server4{
+	width: 69px;
+	 height:63px;
+	 background-position:-218px 0px;
+ }
+.domain_server dl a.server4:hover{
+	background-position:-218px -74px;
+}
+.domain_server dl.dl_server3 a.server3:hover{
+	background-position:-152px -79px;
+}
+.domain_server dl a.server2:hover{
+	background-position:-66px -87px;
+}
+.domain_server dl a.server1:hover{
+	background-position:5px -79px;
+}
+
+.domain_server dl dt{
+	margin-top: 4px;
+	font-weight:bold;
+}
+.domain_server dl dt,.domain_server dl dd{
+	width:135px;
+	margin-left:24px;
+	float:left;
+}
+.domain_server dl.server_l{
+	padding:30px 0 0 100px;
+}
+/*价格列表*/
+.domain_tab_con5{
+	padding:20px 20px;
+}
+.domain_tab_con5 table{
+	border-spacing: 0;
+	border-collapse: collapse;
+	width: 700px;
+	margin:0 auto;
+}
+.domain_tab_con5 table b{
+	color:#F67700;
+}
+.domain_tab_con5 table tr{
+	height:30px;
+	line-height:30px;
+}
+.domain_tab_con5 table th{
+	color:#000;
+}
+.domain_tab_con5 table td{
+	text-indent:40px;
+}
+.domain_tab_con5 table td.td-center{
+	text-indent:0;
+	text-align:center;
+}
+.domain_tab_con5 table,.domain_tab_con5 table td,.domain_tab_con5 table th{
+	border:1px solid #ccc;
+}
+.case{
+	background:url(../images/domain_case.png) no-repeat center center;
+	width: 714px;
+	height:148px;
 }

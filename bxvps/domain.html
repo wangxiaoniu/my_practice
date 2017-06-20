@@ -5,7 +5,8 @@
 	<title>域名中心_星光互联</title>
 	<link rel="stylesheet" href="style/layout.css">
 	<script src="http://cdn.bootcss.com/modernizr/2.8.3/modernizr.js"></script>
-	<script src="base.js"></script>
+	<script src="js/base.js"></script>
+	<script src="js/index.js"></script>
 </head>
 <body>
 	<header>
@@ -45,13 +46,13 @@
 		<ul>
 			<li><a href="index.html">首页</a></li>
 			<li><a href="domain.html">域名中心</a></li>
-			<li><a href="index.html">独立ip服务器</a></li>
-			<li><a href="index.html">国内拨号</a></li>
-			<li><a href="index.html">香港拨号</a></li>
-			<li><a href="index.html">美国拨号</a></li>
-			<li><a href="index.html">PPTP拨号</a></li>
-			<li><a href="index.html">派克斯拨号</a></li>
-			<li><a href="index.html">客服中心</a></li>
+			<li><a href="vps1.html">独立ip服务器</a></li>
+			<li><a href="4.html">国内拨号</a></li>
+			<li><a href="5.html">香港拨号</a></li>
+			<li><a href="6.html">美国拨号</a></li>
+			<li><a href="7.html">PPTP拨号</a></li>
+			<li><a href="8.html">派克斯拨号</a></li>
+			<li><a href="9.html">客服中心</a></li>
 		</ul>
 	</nav>
 	<!-- 导航结束 -->
@@ -63,8 +64,279 @@
 	<article class="content">
 		<section class="sidebar">
 			<h1><span>域名中心</span></h1>
+			<!--侧栏导航-->
+			<ul class="sidebar_nav">
+				<li><a href="#e_register"  class="list1">英文域名注册</a></li>
+				<li ><a href="#cn_register" class="list2">中文域名注册</a></li>
+				<li ><a href="#price" class="list3">域名价格列表</a></li>
+				<li ><a href="#domain_info" class="list4">域名增值服务</a></li>
+				<li><a href="#domain_info" class="list5">域名优势</a></li>
+				<li><a href="#domain_info" class="list6">推荐域名</a></li>
+				<li><a href="#domain_info" class="list7">域名指南</a></li>
+				<li><a href="###" class="list8">域名控制面板</a></li>
+			</ul>
+			<!--侧栏广告列表-->
+			<ul class="ad">
+				<li><a href="###"><img src="images/left_ad1.png" alt="侧栏广告图一"></a></li>
+				<li><a href="###"><img src="images/left_ad2.png" alt="侧栏广告图二"></a></li>
+				<li><a href="###"><img src="images/left_ad3.png" alt="侧栏广告图三"></a></li>
+			</ul>
 		</section>
-		<section class="content_info"></section>
+		<section class="content_info">
+			<!--英文域名注册-->
+			<h1 class="right_title"><a name="e_register"></a><span>英文域名注册</span></h1>
+			<div class="e_domain">
+				<form action="###">
+					<p class="edomain_text"><input type="text" class="domain_text"></p>
+					<div class="domain-fl">
+						<label for="com"><input type="checkbox" id="com" checked="checked">.Com</label>
+						<label for="cn"><input type="checkbox" id="cn">.cn</label>
+						<label for="vip"><input type="checkbox" id="vip">.vip</label>
+						<label for="comcn"><input type="checkbox" id="comcn">.com.cn</label>
+						<label for="hk"><input type="checkbox" id="hk">.hk</label>
+						<label for="win"><input type="checkbox" id="win">.win</label>
+						<label for="wang"><input type="checkbox" id="wang">.wang</label>
+						<label for="gov"><input type="checkbox" id="gov">.gov</label>
+						<label for="cc"><input type="checkbox" id="cc">.cc</label>
+						<label for="net"><input type="checkbox" id="net">.net</label>
+					</div>
+				</form>
+			</div>
+			<!--中文域名注册-->
+			<h1 class="right_title"><a name="cn_register"></a><span>中文域名注册</span></h1>
+			<div class="z_domain">
+				<form action="###">
+					<p class="edomain_text"><input type="text" class="domain_text"></p>
+					<div class="domain-fl">
+						<label for="zcom"><input type="checkbox" id="zcom" checked="checked">.Com</label>
+						<label for="zcn"><input type="checkbox" id="zcn">.cn</label>
+						<label ><input type="checkbox" >.中国(.cn)</label>
+
+					</div>
+				</form>
+			</div>
+			<div id="domain_tab"><a name="domain_info"></a>
+				<ul id="tab_nav">
+					<li>域名优势</li>
+					<li>域名指南</li>
+					<li>推荐域名</li>
+					<li>增值服务</li>
+					<li>价格列表</li>
+				</ul>
+				<div id="tab_box">
+					<!--域名优势-->
+					<div class="domain_advantage">
+						<div class="p1">
+							<p><strong>智能查询：</strong>多种智能查询，为您推荐最精准的域名，轻松注册好域名</p>
+							<p><strong>轻松管理：</strong>强大的域名自助管理平台，支持多线智能解析，修改信息简单方便</p>
+						</div>
+						<div class="p2">
+							<p><strong>解析安全：</strong>全球多点负载均衡，每天承载数十亿解析量，在线率99.99%</p>
+							<p><strong>域名安全：</strong>域名安全锁、whois信息保护，保域名资产安全，网站正常运转</p>
+						</div>
+						<div class="p3">
+							<p><strong>查询快：</strong>多组域名服务器冗余负载均衡，查询更迅速，</p>
+							<p><strong>解析快：</strong>六组DNS 解析服务器，解析最快10-20分钟生效</p>
+						</div>
+						<div class="p4">
+							<p><strong>实时服务：</strong>7x24小时客户服务，随时解答您的问题，让您售后无忧</p>
+							<p><strong>管理方式：</strong>提供功能强大的web控制面板，拥有全部域名管理权。</p>
+						</div>
+					</div>
+					<!--域名指南-->
+					<div class="domain_guide hide">
+						<h1>域名常见问题</h1>
+						<div class="tab_con2_text">
+							<p><strong>1、什么是域名？</strong></p>
+							<p><em>答：</em>域名（domain name）是Internet网络上的一个服务器或一个网络系统的名字，在全世界，没有重复的域名，域名具有唯一性。 所以，域名也被称为"企业的网上商标"，是企业商标保护必备的产品之一。例如：</p>
+							<p><strong>2、怎样注册域名？</strong></p>
+							<p><em>答：</em>注册域名仅需简单五步：查询域名—购买域名—填写域名注册信息—支付—购买成功。 详情查看域名注册攻略</p>
+							<p><strong>3、com和cn域名有什么区别? 哪种域名比较好？</strong></p>
+							<p><em>答：</em>域名分英文域名和中文域名，国际域名和国内域名，代表企业的域名、代表政府的域名、代表个人的域名等等。其中com域名是 国际最广泛流行的通用域名格式，国际化公司通常会注册该类域名；cn域名是中国最流行的顶级通用域名，用户需要根据实际需要选 择，通常，.com/.cn/.net/.com.cn这四类域名为域名注册的首选。</p>
+							<p><strong>4、域名需要备案么？</strong></p>
+							<p><em>答：</em>备案是对网站进行办理备案的，网站备案是由空间或者服务器接入商提供办理，单独注册域名不需要备案。</p>
+							<p><strong>5、域名注册成功后就可以使用了吗？</strong></p>
+							<p><em>答：</em>域名注册成功只能说明您拥有了该域名，想要通过域名访问网站，需要将域名解析到主机，主机和域名绑定后才可以访问。 详情查看域名解析全集</p>
+							<p><strong>6、域名注册完是不是就永远是我的了？</strong></p>
+							<p><em>答：</em>域名注册是按年收费的，如果过期两个月没有续费，域名就会被域名中心删除，可以被其他任何人注册（域名注册时一定要填写 真实信息，如果信息虚假，会丢失域名所有权）。所以注册域名最好直接注册多年，避免因为忘记续费导致域名被别人注册。</p>
+							<p><strong>7、在我们公司注册域名，可以为您提供哪些服务？</strong></p>
+							<p><em>答：</em>可拥有独立的域名管理平台，智能解析，多组DNS服务器轮询工作。我公司提供7*24小时售后技术支持。</p>
+
+						</div>
+					</div>
+					<!--推荐域名-->
+					<div class="domain_commend hide">
+						<dl>
+							<dt>.Com 英文域名</dt>
+							<dd>国际最广泛流行的通用域名格式</dd>
+							<dd><b>35</b>元/首年</dd>
+						</dl>
+						<dl class="dl_r">
+							<dt>.Cn 英文域名</dt>
+							<dd>体现用户价值 保护用户利益</dd>
+							<dd><b>35</b>元/首年</dd>
+						</dl>
+						<dl>
+							<dt>.中国 中文域名</dt>
+							<dd>本土化，用中文访问网站</dd>
+							<dd><b>183</b>元/首年</dd>
+						</dl>
+						<dl class="dl_r">
+							<dt>.HK 香港域名</dt>
+							<dd>投资新宠，火热抢注中...</dd>
+							<dd><b>275</b>元/首年</dd>
+						</dl>
+						<dl>
+							<dt>.Me 英文域名</dt>
+							<dd>让me作为您最好的品牌商标</dd>
+							<dd><b>65</b>元/首年</dd>
+						</dl>
+						<dl class="dl_r">
+							<dt>.Asia 亚洲域名</dt>
+							<dd>亚洲企业逐渐走上国际大舞台</dd>
+							<dd><b>31</b>元/首年</dd>
+						</dl>
+
+
+					</div>
+					<!--增值服务-->
+					<div class="domain_server hide">
+						<dl class="clear">
+							<a href="###" class="server1">域名转入</a>
+							<dt>域名转入</dt>
+							<dd>把您的域名转入，享受安</dd>
+							<dd>全、高效的服务 </dd>
+						</dl>
+						<dl class="clear">
+							<a href="###" class="server2">域名过户</a>
+							<dt>域名过户</dt>
+							<dd>把您的域名转入，享受安</dd>
+							<dd>全、高效的服务 </dd>
+						</dl>
+						<dl class="dl_server3 clear">
+							<a href="###" class="server3">域名注册信息保护</a>
+							<dt>域名注册信息保护</dt>
+							<dd>保护个人隐私不被公开，</dd>
+							<dd>避免因个人信息被窃带来 </dd>
+							<dd>的电话、邮件骚扰</dd>
+						</dl>
+						<dl class="clear">
+							<a href="###" class="server4">域名转入</a>
+							<dt>域名转入</dt>
+							<dd>把您的域名转入，享受安</dd>
+							<dd>全、高效的服务 </dd>
+						</dl>
+					</div>
+					<!--价格列表-->
+					<div class="domain_tab_con5 hide">
+						<table>
+							<tr>
+								<th>域名名称</th>
+								<th>域名种类</th>
+								<th>首年价格</th>
+								<th>续费价格</th>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+							<tr>
+								<td>国际英文域名</td>
+								<td>.com</td>
+								<td class="td-center"><b>35</b>元/年</td>
+								<td class="td-center"><b>58</b>元/年</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<h1 class="right_title"><span>经典案例</span></h1>
+			<div class="case">
+
+			</div>
+
+		</section>
 	</article>
 	<footer class="clear">
 		<ul>

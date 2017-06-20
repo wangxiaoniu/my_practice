@@ -40,6 +40,26 @@ function getTarget(evt){
 		return window.event.srcElement;
 	}
 }
+//判断是否存在样式
+function hasClass(obj,cls){
+	return obj.className.match(new RegExp(('(\\s)|^')+cls+'(\\s|$)'));
+}
+
+//添加样式
+function addClass(obj,cls){
+	if(!this.hasClass(obj,cls)){
+		obj.className += " " +cls;
+	}
+}
+
+//删除样式
+function removeClass(obj,cls){
+	if(hasClass(obj,cls)){
+		var reg= new RegExp('(\\s|^)'+ cls + '(\\s|$)');
+		obj.className=obj.className.replace(reg,'');
+	}
+}
+
 
 
 
